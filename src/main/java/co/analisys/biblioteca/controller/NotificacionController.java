@@ -11,6 +11,7 @@ public class NotificacionController {
     @Autowired
     private NotificacionService notificacionService;
 
+
     @PostMapping
     public void enviarNotificacion(@RequestBody NotificacionDTO notificacion) {
         notificacionService.enviarNotificacion(notificacion);
